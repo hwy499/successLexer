@@ -1,0 +1,4544 @@
+I0:
+S'-> ·S ,$
+S-> ·while ( B ) { S } ,$
+S-> ·while ( B ) S ,$
+S-> ·if ( B ) S ,$
+S-> ·if ( B ) { S } ,$
+S-> ·if ( B ) S else S ,$
+S-> ·if ( B ) { S } else S ,$
+S-> ·if ( B ) S else { S } ,$
+S-> ·if ( B ) { S } else { S } ,$
+S-> ·<id> = E ,$
+S-> ·S ; ,$
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I1:
+S'-> S· ,$
+S-> S ·; ,$
+S-> S ·; ,;
+I2:
+S-> S ;· ,$
+S-> S ;· ,;
+I3:
+S-> while ·( B ) { S } ,$
+S-> while ·( B ) S ,$
+S-> while ·( B ) { S } ,;
+S-> while ·( B ) S ,;
+I4:
+S-> while ( ·B ) { S } ,$
+S-> while ( ·B ) S ,$
+S-> while ( ·B ) { S } ,;
+S-> while ( ·B ) S ,;
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I5:
+S-> while ( B ·) { S } ,$
+S-> while ( B ·) S ,$
+S-> while ( B ·) { S } ,;
+S-> while ( B ·) S ,;
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I6:
+S-> while ( B ) ·{ S } ,$
+S-> while ( B ) ·S ,$
+S-> while ( B ) ·{ S } ,;
+S-> while ( B ) ·S ,;
+S-> ·while ( B ) { S } ,$
+S-> ·while ( B ) S ,$
+S-> ·if ( B ) S ,$
+S-> ·if ( B ) { S } ,$
+S-> ·if ( B ) S else S ,$
+S-> ·if ( B ) { S } else S ,$
+S-> ·if ( B ) S else { S } ,$
+S-> ·if ( B ) { S } else { S } ,$
+S-> ·<id> = E ,$
+S-> ·S ; ,$
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I7:
+S-> while ( B ) { ·S } ,$
+S-> while ( B ) { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I8:
+S-> while ( B ) { S ·} ,$
+S-> while ( B ) { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I9:
+S-> while ( B ) { S }· ,$
+S-> while ( B ) { S }· ,;
+I10:
+S-> S ;· ,}
+S-> S ;· ,;
+I11:
+S-> while ·( B ) { S } ,}
+S-> while ·( B ) S ,}
+S-> while ·( B ) { S } ,;
+S-> while ·( B ) S ,;
+I12:
+S-> while ( ·B ) { S } ,}
+S-> while ( ·B ) S ,}
+S-> while ( ·B ) { S } ,;
+S-> while ( ·B ) S ,;
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I13:
+S-> while ( B ·) { S } ,}
+S-> while ( B ·) S ,}
+S-> while ( B ·) { S } ,;
+S-> while ( B ·) S ,;
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I14:
+S-> while ( B ) ·{ S } ,}
+S-> while ( B ) ·S ,}
+S-> while ( B ) ·{ S } ,;
+S-> while ( B ) ·S ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I15:
+S-> while ( B ) { ·S } ,}
+S-> while ( B ) { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I16:
+S-> while ( B ) { S ·} ,}
+S-> while ( B ) { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I17:
+S-> while ( B ) { S }· ,}
+S-> while ( B ) { S }· ,;
+I18:
+S-> if ·( B ) S ,}
+S-> if ·( B ) { S } ,}
+S-> if ·( B ) S else S ,}
+S-> if ·( B ) { S } else S ,}
+S-> if ·( B ) S else { S } ,}
+S-> if ·( B ) { S } else { S } ,}
+S-> if ·( B ) S ,;
+S-> if ·( B ) { S } ,;
+S-> if ·( B ) S else S ,;
+S-> if ·( B ) { S } else S ,;
+S-> if ·( B ) S else { S } ,;
+S-> if ·( B ) { S } else { S } ,;
+I19:
+S-> if ( ·B ) S ,}
+S-> if ( ·B ) { S } ,}
+S-> if ( ·B ) S else S ,}
+S-> if ( ·B ) { S } else S ,}
+S-> if ( ·B ) S else { S } ,}
+S-> if ( ·B ) { S } else { S } ,}
+S-> if ( ·B ) S ,;
+S-> if ( ·B ) { S } ,;
+S-> if ( ·B ) S else S ,;
+S-> if ( ·B ) { S } else S ,;
+S-> if ( ·B ) S else { S } ,;
+S-> if ( ·B ) { S } else { S } ,;
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I20:
+S-> if ( B ·) S ,}
+S-> if ( B ·) { S } ,}
+S-> if ( B ·) S else S ,}
+S-> if ( B ·) { S } else S ,}
+S-> if ( B ·) S else { S } ,}
+S-> if ( B ·) { S } else { S } ,}
+S-> if ( B ·) S ,;
+S-> if ( B ·) { S } ,;
+S-> if ( B ·) S else S ,;
+S-> if ( B ·) { S } else S ,;
+S-> if ( B ·) S else { S } ,;
+S-> if ( B ·) { S } else { S } ,;
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I21:
+S-> if ( B ) ·S ,}
+S-> if ( B ) ·{ S } ,}
+S-> if ( B ) ·S else S ,}
+S-> if ( B ) ·{ S } else S ,}
+S-> if ( B ) ·S else { S } ,}
+S-> if ( B ) ·{ S } else { S } ,}
+S-> if ( B ) ·S ,;
+S-> if ( B ) ·{ S } ,;
+S-> if ( B ) ·S else S ,;
+S-> if ( B ) ·{ S } else S ,;
+S-> if ( B ) ·S else { S } ,;
+S-> if ( B ) ·{ S } else { S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I22:
+S-> if ( B ) S· ,}
+S-> if ( B ) S ·else S ,}
+S-> if ( B ) S ·else { S } ,}
+S-> if ( B ) S· ,;
+S-> if ( B ) S ·else S ,;
+S-> if ( B ) S ·else { S } ,;
+S-> S ·; ,}
+S-> S ·; ,else
+S-> S ·; ,;
+I23:
+S-> if ( B ) S else ·S ,}
+S-> if ( B ) S else ·{ S } ,}
+S-> if ( B ) S else ·S ,;
+S-> if ( B ) S else ·{ S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I24:
+S-> if ( B ) S else S· ,}
+S-> if ( B ) S else S· ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I25:
+S-> if ( B ) S else { ·S } ,}
+S-> if ( B ) S else { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I26:
+S-> if ( B ) S else { S ·} ,}
+S-> if ( B ) S else { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I27:
+S-> if ( B ) S else { S }· ,}
+S-> if ( B ) S else { S }· ,;
+I28:
+S-> <id> ·= E ,}
+S-> <id> ·= E ,;
+I29:
+S-> <id> = ·E ,}
+S-> <id> = ·E ,;
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I30:
+S-> <id> = E· ,}
+S-> <id> = E· ,;
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I31:
+E-> E + ·E ,}
+E-> E + ·E ,;
+E-> E + ·E ,+
+E-> E + ·E ,-
+E-> E + ·E ,/
+E-> E + ·E ,*
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I32:
+E-> E + E· ,}
+E-> E + E· ,;
+E-> E + E· ,+
+E-> E + E· ,-
+E-> E + E· ,/
+E-> E + E· ,*
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I33:
+E-> E - ·E ,}
+E-> E - ·E ,;
+E-> E - ·E ,+
+E-> E - ·E ,-
+E-> E - ·E ,/
+E-> E - ·E ,*
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I34:
+E-> E - E· ,}
+E-> E - E· ,;
+E-> E - E· ,+
+E-> E - E· ,-
+E-> E - E· ,/
+E-> E - E· ,*
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I35:
+E-> E / ·E ,}
+E-> E / ·E ,;
+E-> E / ·E ,+
+E-> E / ·E ,-
+E-> E / ·E ,/
+E-> E / ·E ,*
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I36:
+E-> E / E· ,}
+E-> E / E· ,;
+E-> E / E· ,+
+E-> E / E· ,-
+E-> E / E· ,/
+E-> E / E· ,*
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I37:
+E-> E * ·E ,}
+E-> E * ·E ,;
+E-> E * ·E ,+
+E-> E * ·E ,-
+E-> E * ·E ,/
+E-> E * ·E ,*
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I38:
+E-> E * E· ,}
+E-> E * E· ,;
+E-> E * E· ,+
+E-> E * E· ,-
+E-> E * E· ,/
+E-> E * E· ,*
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I39:
+E-> ( ·E ) ,}
+E-> ( ·E ) ,;
+E-> ( ·E ) ,+
+E-> ( ·E ) ,-
+E-> ( ·E ) ,/
+E-> ( ·E ) ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I40:
+E-> ( E ·) ,}
+E-> ( E ·) ,;
+E-> ( E ·) ,+
+E-> ( E ·) ,-
+E-> ( E ·) ,/
+E-> ( E ·) ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I41:
+E-> ( E )· ,}
+E-> ( E )· ,;
+E-> ( E )· ,+
+E-> ( E )· ,-
+E-> ( E )· ,/
+E-> ( E )· ,*
+I42:
+E-> E + ·E ,)
+E-> E + ·E ,+
+E-> E + ·E ,-
+E-> E + ·E ,/
+E-> E + ·E ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I43:
+E-> E + E· ,)
+E-> E + E· ,+
+E-> E + E· ,-
+E-> E + E· ,/
+E-> E + E· ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I44:
+E-> E - ·E ,)
+E-> E - ·E ,+
+E-> E - ·E ,-
+E-> E - ·E ,/
+E-> E - ·E ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I45:
+E-> E - E· ,)
+E-> E - E· ,+
+E-> E - E· ,-
+E-> E - E· ,/
+E-> E - E· ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I46:
+E-> E / ·E ,)
+E-> E / ·E ,+
+E-> E / ·E ,-
+E-> E / ·E ,/
+E-> E / ·E ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I47:
+E-> E / E· ,)
+E-> E / E· ,+
+E-> E / E· ,-
+E-> E / E· ,/
+E-> E / E· ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I48:
+E-> E * ·E ,)
+E-> E * ·E ,+
+E-> E * ·E ,-
+E-> E * ·E ,/
+E-> E * ·E ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I49:
+E-> E * E· ,)
+E-> E * E· ,+
+E-> E * E· ,-
+E-> E * E· ,/
+E-> E * E· ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I50:
+E-> ( ·E ) ,)
+E-> ( ·E ) ,+
+E-> ( ·E ) ,-
+E-> ( ·E ) ,/
+E-> ( ·E ) ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I51:
+E-> ( E ·) ,)
+E-> ( E ·) ,+
+E-> ( E ·) ,-
+E-> ( E ·) ,/
+E-> ( E ·) ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I52:
+E-> ( E )· ,)
+E-> ( E )· ,+
+E-> ( E )· ,-
+E-> ( E )· ,/
+E-> ( E )· ,*
+I53:
+E-> <num>· ,)
+E-> <num>· ,+
+E-> <num>· ,-
+E-> <num>· ,/
+E-> <num>· ,*
+I54:
+E-> <id>· ,)
+E-> <id>· ,+
+E-> <id>· ,-
+E-> <id>· ,/
+E-> <id>· ,*
+I55:
+E-> <num>· ,}
+E-> <num>· ,;
+E-> <num>· ,+
+E-> <num>· ,-
+E-> <num>· ,/
+E-> <num>· ,*
+I56:
+E-> <id>· ,}
+E-> <id>· ,;
+E-> <id>· ,+
+E-> <id>· ,-
+E-> <id>· ,/
+E-> <id>· ,*
+I57:
+S-> S ;· ,}
+S-> S ;· ,else
+S-> S ;· ,;
+I58:
+S-> if ( B ) { ·S } ,}
+S-> if ( B ) { ·S } else S ,}
+S-> if ( B ) { ·S } else { S } ,}
+S-> if ( B ) { ·S } ,;
+S-> if ( B ) { ·S } else S ,;
+S-> if ( B ) { ·S } else { S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I59:
+S-> if ( B ) { S ·} ,}
+S-> if ( B ) { S ·} else S ,}
+S-> if ( B ) { S ·} else { S } ,}
+S-> if ( B ) { S ·} ,;
+S-> if ( B ) { S ·} else S ,;
+S-> if ( B ) { S ·} else { S } ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I60:
+S-> if ( B ) { S }· ,}
+S-> if ( B ) { S } ·else S ,}
+S-> if ( B ) { S } ·else { S } ,}
+S-> if ( B ) { S }· ,;
+S-> if ( B ) { S } ·else S ,;
+S-> if ( B ) { S } ·else { S } ,;
+I61:
+S-> if ( B ) { S } else ·S ,}
+S-> if ( B ) { S } else ·{ S } ,}
+S-> if ( B ) { S } else ·S ,;
+S-> if ( B ) { S } else ·{ S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I62:
+S-> if ( B ) { S } else S· ,}
+S-> if ( B ) { S } else S· ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I63:
+S-> if ( B ) { S } else { ·S } ,}
+S-> if ( B ) { S } else { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I64:
+S-> if ( B ) { S } else { S ·} ,}
+S-> if ( B ) { S } else { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I65:
+S-> if ( B ) { S } else { S }· ,}
+S-> if ( B ) { S } else { S }· ,;
+I66:
+S-> while ·( B ) { S } ,}
+S-> while ·( B ) S ,}
+S-> while ·( B ) { S } ,else
+S-> while ·( B ) S ,else
+S-> while ·( B ) { S } ,;
+S-> while ·( B ) S ,;
+I67:
+S-> while ( ·B ) { S } ,}
+S-> while ( ·B ) S ,}
+S-> while ( ·B ) { S } ,else
+S-> while ( ·B ) S ,else
+S-> while ( ·B ) { S } ,;
+S-> while ( ·B ) S ,;
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I68:
+S-> while ( B ·) { S } ,}
+S-> while ( B ·) S ,}
+S-> while ( B ·) { S } ,else
+S-> while ( B ·) S ,else
+S-> while ( B ·) { S } ,;
+S-> while ( B ·) S ,;
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I69:
+S-> while ( B ) ·{ S } ,}
+S-> while ( B ) ·S ,}
+S-> while ( B ) ·{ S } ,else
+S-> while ( B ) ·S ,else
+S-> while ( B ) ·{ S } ,;
+S-> while ( B ) ·S ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I70:
+S-> while ( B ) { ·S } ,}
+S-> while ( B ) { ·S } ,else
+S-> while ( B ) { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I71:
+S-> while ( B ) { S ·} ,}
+S-> while ( B ) { S ·} ,else
+S-> while ( B ) { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I72:
+S-> while ( B ) { S }· ,}
+S-> while ( B ) { S }· ,else
+S-> while ( B ) { S }· ,;
+I73:
+S-> while ( B ) S· ,}
+S-> while ( B ) S· ,else
+S-> while ( B ) S· ,;
+S-> S ·; ,}
+S-> S ·; ,else
+S-> S ·; ,;
+I74:
+S-> if ·( B ) S ,}
+S-> if ·( B ) { S } ,}
+S-> if ·( B ) S else S ,}
+S-> if ·( B ) { S } else S ,}
+S-> if ·( B ) S else { S } ,}
+S-> if ·( B ) { S } else { S } ,}
+S-> if ·( B ) S ,else
+S-> if ·( B ) { S } ,else
+S-> if ·( B ) S else S ,else
+S-> if ·( B ) { S } else S ,else
+S-> if ·( B ) S else { S } ,else
+S-> if ·( B ) { S } else { S } ,else
+S-> if ·( B ) S ,;
+S-> if ·( B ) { S } ,;
+S-> if ·( B ) S else S ,;
+S-> if ·( B ) { S } else S ,;
+S-> if ·( B ) S else { S } ,;
+S-> if ·( B ) { S } else { S } ,;
+I75:
+S-> if ( ·B ) S ,}
+S-> if ( ·B ) { S } ,}
+S-> if ( ·B ) S else S ,}
+S-> if ( ·B ) { S } else S ,}
+S-> if ( ·B ) S else { S } ,}
+S-> if ( ·B ) { S } else { S } ,}
+S-> if ( ·B ) S ,else
+S-> if ( ·B ) { S } ,else
+S-> if ( ·B ) S else S ,else
+S-> if ( ·B ) { S } else S ,else
+S-> if ( ·B ) S else { S } ,else
+S-> if ( ·B ) { S } else { S } ,else
+S-> if ( ·B ) S ,;
+S-> if ( ·B ) { S } ,;
+S-> if ( ·B ) S else S ,;
+S-> if ( ·B ) { S } else S ,;
+S-> if ( ·B ) S else { S } ,;
+S-> if ( ·B ) { S } else { S } ,;
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I76:
+S-> if ( B ·) S ,}
+S-> if ( B ·) { S } ,}
+S-> if ( B ·) S else S ,}
+S-> if ( B ·) { S } else S ,}
+S-> if ( B ·) S else { S } ,}
+S-> if ( B ·) { S } else { S } ,}
+S-> if ( B ·) S ,else
+S-> if ( B ·) { S } ,else
+S-> if ( B ·) S else S ,else
+S-> if ( B ·) { S } else S ,else
+S-> if ( B ·) S else { S } ,else
+S-> if ( B ·) { S } else { S } ,else
+S-> if ( B ·) S ,;
+S-> if ( B ·) { S } ,;
+S-> if ( B ·) S else S ,;
+S-> if ( B ·) { S } else S ,;
+S-> if ( B ·) S else { S } ,;
+S-> if ( B ·) { S } else { S } ,;
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I77:
+S-> if ( B ) ·S ,}
+S-> if ( B ) ·{ S } ,}
+S-> if ( B ) ·S else S ,}
+S-> if ( B ) ·{ S } else S ,}
+S-> if ( B ) ·S else { S } ,}
+S-> if ( B ) ·{ S } else { S } ,}
+S-> if ( B ) ·S ,else
+S-> if ( B ) ·{ S } ,else
+S-> if ( B ) ·S else S ,else
+S-> if ( B ) ·{ S } else S ,else
+S-> if ( B ) ·S else { S } ,else
+S-> if ( B ) ·{ S } else { S } ,else
+S-> if ( B ) ·S ,;
+S-> if ( B ) ·{ S } ,;
+S-> if ( B ) ·S else S ,;
+S-> if ( B ) ·{ S } else S ,;
+S-> if ( B ) ·S else { S } ,;
+S-> if ( B ) ·{ S } else { S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I78:
+S-> if ( B ) S· ,}
+S-> if ( B ) S ·else S ,}
+S-> if ( B ) S ·else { S } ,}
+S-> if ( B ) S· ,else
+S-> if ( B ) S ·else S ,else
+S-> if ( B ) S ·else { S } ,else
+S-> if ( B ) S· ,;
+S-> if ( B ) S ·else S ,;
+S-> if ( B ) S ·else { S } ,;
+S-> S ·; ,}
+S-> S ·; ,else
+S-> S ·; ,;
+I79:
+S-> if ( B ) S else ·S ,}
+S-> if ( B ) S else ·{ S } ,}
+S-> if ( B ) S else ·S ,else
+S-> if ( B ) S else ·{ S } ,else
+S-> if ( B ) S else ·S ,;
+S-> if ( B ) S else ·{ S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I80:
+S-> if ( B ) S else S· ,}
+S-> if ( B ) S else S· ,else
+S-> if ( B ) S else S· ,;
+S-> S ·; ,}
+S-> S ·; ,else
+S-> S ·; ,;
+I81:
+S-> if ( B ) S else { ·S } ,}
+S-> if ( B ) S else { ·S } ,else
+S-> if ( B ) S else { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I82:
+S-> if ( B ) S else { S ·} ,}
+S-> if ( B ) S else { S ·} ,else
+S-> if ( B ) S else { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I83:
+S-> if ( B ) S else { S }· ,}
+S-> if ( B ) S else { S }· ,else
+S-> if ( B ) S else { S }· ,;
+I84:
+S-> <id> ·= E ,}
+S-> <id> ·= E ,else
+S-> <id> ·= E ,;
+I85:
+S-> <id> = ·E ,}
+S-> <id> = ·E ,else
+S-> <id> = ·E ,;
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I86:
+S-> <id> = E· ,}
+S-> <id> = E· ,else
+S-> <id> = E· ,;
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I87:
+E-> E + ·E ,}
+E-> E + ·E ,else
+E-> E + ·E ,;
+E-> E + ·E ,+
+E-> E + ·E ,-
+E-> E + ·E ,/
+E-> E + ·E ,*
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I88:
+E-> E + E· ,}
+E-> E + E· ,else
+E-> E + E· ,;
+E-> E + E· ,+
+E-> E + E· ,-
+E-> E + E· ,/
+E-> E + E· ,*
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I89:
+E-> E - ·E ,}
+E-> E - ·E ,else
+E-> E - ·E ,;
+E-> E - ·E ,+
+E-> E - ·E ,-
+E-> E - ·E ,/
+E-> E - ·E ,*
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I90:
+E-> E - E· ,}
+E-> E - E· ,else
+E-> E - E· ,;
+E-> E - E· ,+
+E-> E - E· ,-
+E-> E - E· ,/
+E-> E - E· ,*
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I91:
+E-> E / ·E ,}
+E-> E / ·E ,else
+E-> E / ·E ,;
+E-> E / ·E ,+
+E-> E / ·E ,-
+E-> E / ·E ,/
+E-> E / ·E ,*
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I92:
+E-> E / E· ,}
+E-> E / E· ,else
+E-> E / E· ,;
+E-> E / E· ,+
+E-> E / E· ,-
+E-> E / E· ,/
+E-> E / E· ,*
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I93:
+E-> E * ·E ,}
+E-> E * ·E ,else
+E-> E * ·E ,;
+E-> E * ·E ,+
+E-> E * ·E ,-
+E-> E * ·E ,/
+E-> E * ·E ,*
+E-> ·E + E ,}
+E-> ·E - E ,}
+E-> ·E / E ,}
+E-> ·E * E ,}
+E-> ·( E ) ,}
+E-> ·<num> ,}
+E-> ·<id> ,}
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I94:
+E-> E * E· ,}
+E-> E * E· ,else
+E-> E * E· ,;
+E-> E * E· ,+
+E-> E * E· ,-
+E-> E * E· ,/
+E-> E * E· ,*
+E-> E ·+ E ,}
+E-> E ·- E ,}
+E-> E ·/ E ,}
+E-> E ·* E ,}
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I95:
+E-> ( ·E ) ,}
+E-> ( ·E ) ,else
+E-> ( ·E ) ,;
+E-> ( ·E ) ,+
+E-> ( ·E ) ,-
+E-> ( ·E ) ,/
+E-> ( ·E ) ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I96:
+E-> ( E ·) ,}
+E-> ( E ·) ,else
+E-> ( E ·) ,;
+E-> ( E ·) ,+
+E-> ( E ·) ,-
+E-> ( E ·) ,/
+E-> ( E ·) ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I97:
+E-> ( E )· ,}
+E-> ( E )· ,else
+E-> ( E )· ,;
+E-> ( E )· ,+
+E-> ( E )· ,-
+E-> ( E )· ,/
+E-> ( E )· ,*
+I98:
+E-> <num>· ,}
+E-> <num>· ,else
+E-> <num>· ,;
+E-> <num>· ,+
+E-> <num>· ,-
+E-> <num>· ,/
+E-> <num>· ,*
+I99:
+E-> <id>· ,}
+E-> <id>· ,else
+E-> <id>· ,;
+E-> <id>· ,+
+E-> <id>· ,-
+E-> <id>· ,/
+E-> <id>· ,*
+I100:
+S-> if ( B ) { ·S } ,}
+S-> if ( B ) { ·S } else S ,}
+S-> if ( B ) { ·S } else { S } ,}
+S-> if ( B ) { ·S } ,else
+S-> if ( B ) { ·S } else S ,else
+S-> if ( B ) { ·S } else { S } ,else
+S-> if ( B ) { ·S } ,;
+S-> if ( B ) { ·S } else S ,;
+S-> if ( B ) { ·S } else { S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I101:
+S-> if ( B ) { S ·} ,}
+S-> if ( B ) { S ·} else S ,}
+S-> if ( B ) { S ·} else { S } ,}
+S-> if ( B ) { S ·} ,else
+S-> if ( B ) { S ·} else S ,else
+S-> if ( B ) { S ·} else { S } ,else
+S-> if ( B ) { S ·} ,;
+S-> if ( B ) { S ·} else S ,;
+S-> if ( B ) { S ·} else { S } ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I102:
+S-> if ( B ) { S }· ,}
+S-> if ( B ) { S } ·else S ,}
+S-> if ( B ) { S } ·else { S } ,}
+S-> if ( B ) { S }· ,else
+S-> if ( B ) { S } ·else S ,else
+S-> if ( B ) { S } ·else { S } ,else
+S-> if ( B ) { S }· ,;
+S-> if ( B ) { S } ·else S ,;
+S-> if ( B ) { S } ·else { S } ,;
+I103:
+S-> if ( B ) { S } else ·S ,}
+S-> if ( B ) { S } else ·{ S } ,}
+S-> if ( B ) { S } else ·S ,else
+S-> if ( B ) { S } else ·{ S } ,else
+S-> if ( B ) { S } else ·S ,;
+S-> if ( B ) { S } else ·{ S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I104:
+S-> if ( B ) { S } else S· ,}
+S-> if ( B ) { S } else S· ,else
+S-> if ( B ) { S } else S· ,;
+S-> S ·; ,}
+S-> S ·; ,else
+S-> S ·; ,;
+I105:
+S-> if ( B ) { S } else { ·S } ,}
+S-> if ( B ) { S } else { ·S } ,else
+S-> if ( B ) { S } else { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I106:
+S-> if ( B ) { S } else { S ·} ,}
+S-> if ( B ) { S } else { S ·} ,else
+S-> if ( B ) { S } else { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I107:
+S-> if ( B ) { S } else { S }· ,}
+S-> if ( B ) { S } else { S }· ,else
+S-> if ( B ) { S } else { S }· ,;
+I108:
+B-> B >= ·B ,)
+B-> B >= ·B ,>=
+B-> B >= ·B ,>
+B-> B >= ·B ,<
+B-> B >= ·B ,<=
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I109:
+B-> B >= B· ,)
+B-> B >= B· ,>=
+B-> B >= B· ,>
+B-> B >= B· ,<
+B-> B >= B· ,<=
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I110:
+B-> B > ·B ,)
+B-> B > ·B ,>=
+B-> B > ·B ,>
+B-> B > ·B ,<
+B-> B > ·B ,<=
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I111:
+B-> B > B· ,)
+B-> B > B· ,>=
+B-> B > B· ,>
+B-> B > B· ,<
+B-> B > B· ,<=
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I112:
+B-> B < ·B ,)
+B-> B < ·B ,>=
+B-> B < ·B ,>
+B-> B < ·B ,<
+B-> B < ·B ,<=
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I113:
+B-> B < B· ,)
+B-> B < B· ,>=
+B-> B < B· ,>
+B-> B < B· ,<
+B-> B < B· ,<=
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I114:
+B-> B <= ·B ,)
+B-> B <= ·B ,>=
+B-> B <= ·B ,>
+B-> B <= ·B ,<
+B-> B <= ·B ,<=
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I115:
+B-> B <= B· ,)
+B-> B <= B· ,>=
+B-> B <= B· ,>
+B-> B <= B· ,<
+B-> B <= B· ,<=
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I116:
+B-> <num>· ,)
+B-> <num>· ,>=
+B-> <num>· ,>
+B-> <num>· ,<
+B-> <num>· ,<=
+I117:
+B-> <id>· ,)
+B-> <id>· ,>=
+B-> <id>· ,>
+B-> <id>· ,<
+B-> <id>· ,<=
+I118:
+S-> while ( B ) S· ,}
+S-> while ( B ) S· ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I119:
+S-> while ( B ) S· ,$
+S-> while ( B ) S· ,;
+S-> S ·; ,$
+S-> S ·; ,;
+I120:
+S-> if ·( B ) S ,$
+S-> if ·( B ) { S } ,$
+S-> if ·( B ) S else S ,$
+S-> if ·( B ) { S } else S ,$
+S-> if ·( B ) S else { S } ,$
+S-> if ·( B ) { S } else { S } ,$
+S-> if ·( B ) S ,;
+S-> if ·( B ) { S } ,;
+S-> if ·( B ) S else S ,;
+S-> if ·( B ) { S } else S ,;
+S-> if ·( B ) S else { S } ,;
+S-> if ·( B ) { S } else { S } ,;
+I121:
+S-> if ( ·B ) S ,$
+S-> if ( ·B ) { S } ,$
+S-> if ( ·B ) S else S ,$
+S-> if ( ·B ) { S } else S ,$
+S-> if ( ·B ) S else { S } ,$
+S-> if ( ·B ) { S } else { S } ,$
+S-> if ( ·B ) S ,;
+S-> if ( ·B ) { S } ,;
+S-> if ( ·B ) S else S ,;
+S-> if ( ·B ) { S } else S ,;
+S-> if ( ·B ) S else { S } ,;
+S-> if ( ·B ) { S } else { S } ,;
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I122:
+S-> if ( B ·) S ,$
+S-> if ( B ·) { S } ,$
+S-> if ( B ·) S else S ,$
+S-> if ( B ·) { S } else S ,$
+S-> if ( B ·) S else { S } ,$
+S-> if ( B ·) { S } else { S } ,$
+S-> if ( B ·) S ,;
+S-> if ( B ·) { S } ,;
+S-> if ( B ·) S else S ,;
+S-> if ( B ·) { S } else S ,;
+S-> if ( B ·) S else { S } ,;
+S-> if ( B ·) { S } else { S } ,;
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I123:
+S-> if ( B ) ·S ,$
+S-> if ( B ) ·{ S } ,$
+S-> if ( B ) ·S else S ,$
+S-> if ( B ) ·{ S } else S ,$
+S-> if ( B ) ·S else { S } ,$
+S-> if ( B ) ·{ S } else { S } ,$
+S-> if ( B ) ·S ,;
+S-> if ( B ) ·{ S } ,;
+S-> if ( B ) ·S else S ,;
+S-> if ( B ) ·{ S } else S ,;
+S-> if ( B ) ·S else { S } ,;
+S-> if ( B ) ·{ S } else { S } ,;
+S-> ·while ( B ) { S } ,$
+S-> ·while ( B ) S ,$
+S-> ·if ( B ) S ,$
+S-> ·if ( B ) { S } ,$
+S-> ·if ( B ) S else S ,$
+S-> ·if ( B ) { S } else S ,$
+S-> ·if ( B ) S else { S } ,$
+S-> ·if ( B ) { S } else { S } ,$
+S-> ·<id> = E ,$
+S-> ·S ; ,$
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I124:
+S-> if ( B ) S· ,$
+S-> if ( B ) S ·else S ,$
+S-> if ( B ) S ·else { S } ,$
+S-> if ( B ) S· ,;
+S-> if ( B ) S ·else S ,;
+S-> if ( B ) S ·else { S } ,;
+S-> S ·; ,$
+S-> S ·; ,else
+S-> S ·; ,;
+I125:
+S-> if ( B ) S else ·S ,$
+S-> if ( B ) S else ·{ S } ,$
+S-> if ( B ) S else ·S ,;
+S-> if ( B ) S else ·{ S } ,;
+S-> ·while ( B ) { S } ,$
+S-> ·while ( B ) S ,$
+S-> ·if ( B ) S ,$
+S-> ·if ( B ) { S } ,$
+S-> ·if ( B ) S else S ,$
+S-> ·if ( B ) { S } else S ,$
+S-> ·if ( B ) S else { S } ,$
+S-> ·if ( B ) { S } else { S } ,$
+S-> ·<id> = E ,$
+S-> ·S ; ,$
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I126:
+S-> if ( B ) S else S· ,$
+S-> if ( B ) S else S· ,;
+S-> S ·; ,$
+S-> S ·; ,;
+I127:
+S-> if ( B ) S else { ·S } ,$
+S-> if ( B ) S else { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I128:
+S-> if ( B ) S else { S ·} ,$
+S-> if ( B ) S else { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I129:
+S-> if ( B ) S else { S }· ,$
+S-> if ( B ) S else { S }· ,;
+I130:
+S-> <id> ·= E ,$
+S-> <id> ·= E ,;
+I131:
+S-> <id> = ·E ,$
+S-> <id> = ·E ,;
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I132:
+S-> <id> = E· ,$
+S-> <id> = E· ,;
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I133:
+E-> E + ·E ,$
+E-> E + ·E ,;
+E-> E + ·E ,+
+E-> E + ·E ,-
+E-> E + ·E ,/
+E-> E + ·E ,*
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I134:
+E-> E + E· ,$
+E-> E + E· ,;
+E-> E + E· ,+
+E-> E + E· ,-
+E-> E + E· ,/
+E-> E + E· ,*
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I135:
+E-> E - ·E ,$
+E-> E - ·E ,;
+E-> E - ·E ,+
+E-> E - ·E ,-
+E-> E - ·E ,/
+E-> E - ·E ,*
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I136:
+E-> E - E· ,$
+E-> E - E· ,;
+E-> E - E· ,+
+E-> E - E· ,-
+E-> E - E· ,/
+E-> E - E· ,*
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I137:
+E-> E / ·E ,$
+E-> E / ·E ,;
+E-> E / ·E ,+
+E-> E / ·E ,-
+E-> E / ·E ,/
+E-> E / ·E ,*
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I138:
+E-> E / E· ,$
+E-> E / E· ,;
+E-> E / E· ,+
+E-> E / E· ,-
+E-> E / E· ,/
+E-> E / E· ,*
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I139:
+E-> E * ·E ,$
+E-> E * ·E ,;
+E-> E * ·E ,+
+E-> E * ·E ,-
+E-> E * ·E ,/
+E-> E * ·E ,*
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I140:
+E-> E * E· ,$
+E-> E * E· ,;
+E-> E * E· ,+
+E-> E * E· ,-
+E-> E * E· ,/
+E-> E * E· ,*
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I141:
+E-> ( ·E ) ,$
+E-> ( ·E ) ,;
+E-> ( ·E ) ,+
+E-> ( ·E ) ,-
+E-> ( ·E ) ,/
+E-> ( ·E ) ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I142:
+E-> ( E ·) ,$
+E-> ( E ·) ,;
+E-> ( E ·) ,+
+E-> ( E ·) ,-
+E-> ( E ·) ,/
+E-> ( E ·) ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I143:
+E-> ( E )· ,$
+E-> ( E )· ,;
+E-> ( E )· ,+
+E-> ( E )· ,-
+E-> ( E )· ,/
+E-> ( E )· ,*
+I144:
+E-> <num>· ,$
+E-> <num>· ,;
+E-> <num>· ,+
+E-> <num>· ,-
+E-> <num>· ,/
+E-> <num>· ,*
+I145:
+E-> <id>· ,$
+E-> <id>· ,;
+E-> <id>· ,+
+E-> <id>· ,-
+E-> <id>· ,/
+E-> <id>· ,*
+I146:
+S-> S ;· ,$
+S-> S ;· ,else
+S-> S ;· ,;
+I147:
+S-> if ( B ) { ·S } ,$
+S-> if ( B ) { ·S } else S ,$
+S-> if ( B ) { ·S } else { S } ,$
+S-> if ( B ) { ·S } ,;
+S-> if ( B ) { ·S } else S ,;
+S-> if ( B ) { ·S } else { S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I148:
+S-> if ( B ) { S ·} ,$
+S-> if ( B ) { S ·} else S ,$
+S-> if ( B ) { S ·} else { S } ,$
+S-> if ( B ) { S ·} ,;
+S-> if ( B ) { S ·} else S ,;
+S-> if ( B ) { S ·} else { S } ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I149:
+S-> if ( B ) { S }· ,$
+S-> if ( B ) { S } ·else S ,$
+S-> if ( B ) { S } ·else { S } ,$
+S-> if ( B ) { S }· ,;
+S-> if ( B ) { S } ·else S ,;
+S-> if ( B ) { S } ·else { S } ,;
+I150:
+S-> if ( B ) { S } else ·S ,$
+S-> if ( B ) { S } else ·{ S } ,$
+S-> if ( B ) { S } else ·S ,;
+S-> if ( B ) { S } else ·{ S } ,;
+S-> ·while ( B ) { S } ,$
+S-> ·while ( B ) S ,$
+S-> ·if ( B ) S ,$
+S-> ·if ( B ) { S } ,$
+S-> ·if ( B ) S else S ,$
+S-> ·if ( B ) { S } else S ,$
+S-> ·if ( B ) S else { S } ,$
+S-> ·if ( B ) { S } else { S } ,$
+S-> ·<id> = E ,$
+S-> ·S ; ,$
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I151:
+S-> if ( B ) { S } else S· ,$
+S-> if ( B ) { S } else S· ,;
+S-> S ·; ,$
+S-> S ·; ,;
+I152:
+S-> if ( B ) { S } else { ·S } ,$
+S-> if ( B ) { S } else { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I153:
+S-> if ( B ) { S } else { S ·} ,$
+S-> if ( B ) { S } else { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I154:
+S-> if ( B ) { S } else { S }· ,$
+S-> if ( B ) { S } else { S }· ,;
+I155:
+S-> while ·( B ) { S } ,$
+S-> while ·( B ) S ,$
+S-> while ·( B ) { S } ,else
+S-> while ·( B ) S ,else
+S-> while ·( B ) { S } ,;
+S-> while ·( B ) S ,;
+I156:
+S-> while ( ·B ) { S } ,$
+S-> while ( ·B ) S ,$
+S-> while ( ·B ) { S } ,else
+S-> while ( ·B ) S ,else
+S-> while ( ·B ) { S } ,;
+S-> while ( ·B ) S ,;
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I157:
+S-> while ( B ·) { S } ,$
+S-> while ( B ·) S ,$
+S-> while ( B ·) { S } ,else
+S-> while ( B ·) S ,else
+S-> while ( B ·) { S } ,;
+S-> while ( B ·) S ,;
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I158:
+S-> while ( B ) ·{ S } ,$
+S-> while ( B ) ·S ,$
+S-> while ( B ) ·{ S } ,else
+S-> while ( B ) ·S ,else
+S-> while ( B ) ·{ S } ,;
+S-> while ( B ) ·S ,;
+S-> ·while ( B ) { S } ,$
+S-> ·while ( B ) S ,$
+S-> ·if ( B ) S ,$
+S-> ·if ( B ) { S } ,$
+S-> ·if ( B ) S else S ,$
+S-> ·if ( B ) { S } else S ,$
+S-> ·if ( B ) S else { S } ,$
+S-> ·if ( B ) { S } else { S } ,$
+S-> ·<id> = E ,$
+S-> ·S ; ,$
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I159:
+S-> while ( B ) { ·S } ,$
+S-> while ( B ) { ·S } ,else
+S-> while ( B ) { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I160:
+S-> while ( B ) { S ·} ,$
+S-> while ( B ) { S ·} ,else
+S-> while ( B ) { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I161:
+S-> while ( B ) { S }· ,$
+S-> while ( B ) { S }· ,else
+S-> while ( B ) { S }· ,;
+I162:
+S-> while ( B ) S· ,$
+S-> while ( B ) S· ,else
+S-> while ( B ) S· ,;
+S-> S ·; ,$
+S-> S ·; ,else
+S-> S ·; ,;
+I163:
+S-> if ·( B ) S ,$
+S-> if ·( B ) { S } ,$
+S-> if ·( B ) S else S ,$
+S-> if ·( B ) { S } else S ,$
+S-> if ·( B ) S else { S } ,$
+S-> if ·( B ) { S } else { S } ,$
+S-> if ·( B ) S ,else
+S-> if ·( B ) { S } ,else
+S-> if ·( B ) S else S ,else
+S-> if ·( B ) { S } else S ,else
+S-> if ·( B ) S else { S } ,else
+S-> if ·( B ) { S } else { S } ,else
+S-> if ·( B ) S ,;
+S-> if ·( B ) { S } ,;
+S-> if ·( B ) S else S ,;
+S-> if ·( B ) { S } else S ,;
+S-> if ·( B ) S else { S } ,;
+S-> if ·( B ) { S } else { S } ,;
+I164:
+S-> if ( ·B ) S ,$
+S-> if ( ·B ) { S } ,$
+S-> if ( ·B ) S else S ,$
+S-> if ( ·B ) { S } else S ,$
+S-> if ( ·B ) S else { S } ,$
+S-> if ( ·B ) { S } else { S } ,$
+S-> if ( ·B ) S ,else
+S-> if ( ·B ) { S } ,else
+S-> if ( ·B ) S else S ,else
+S-> if ( ·B ) { S } else S ,else
+S-> if ( ·B ) S else { S } ,else
+S-> if ( ·B ) { S } else { S } ,else
+S-> if ( ·B ) S ,;
+S-> if ( ·B ) { S } ,;
+S-> if ( ·B ) S else S ,;
+S-> if ( ·B ) { S } else S ,;
+S-> if ( ·B ) S else { S } ,;
+S-> if ( ·B ) { S } else { S } ,;
+B-> ·B >= B ,)
+B-> ·B > B ,)
+B-> ·B < B ,)
+B-> ·B <= B ,)
+B-> ·<num> ,)
+B-> ·<id> ,)
+B-> ·B >= B ,>=
+B-> ·B > B ,>=
+B-> ·B < B ,>=
+B-> ·B <= B ,>=
+B-> ·<num> ,>=
+B-> ·<id> ,>=
+B-> ·B >= B ,>
+B-> ·B > B ,>
+B-> ·B < B ,>
+B-> ·B <= B ,>
+B-> ·<num> ,>
+B-> ·<id> ,>
+B-> ·B >= B ,<
+B-> ·B > B ,<
+B-> ·B < B ,<
+B-> ·B <= B ,<
+B-> ·<num> ,<
+B-> ·<id> ,<
+B-> ·B >= B ,<=
+B-> ·B > B ,<=
+B-> ·B < B ,<=
+B-> ·B <= B ,<=
+B-> ·<num> ,<=
+B-> ·<id> ,<=
+I165:
+S-> if ( B ·) S ,$
+S-> if ( B ·) { S } ,$
+S-> if ( B ·) S else S ,$
+S-> if ( B ·) { S } else S ,$
+S-> if ( B ·) S else { S } ,$
+S-> if ( B ·) { S } else { S } ,$
+S-> if ( B ·) S ,else
+S-> if ( B ·) { S } ,else
+S-> if ( B ·) S else S ,else
+S-> if ( B ·) { S } else S ,else
+S-> if ( B ·) S else { S } ,else
+S-> if ( B ·) { S } else { S } ,else
+S-> if ( B ·) S ,;
+S-> if ( B ·) { S } ,;
+S-> if ( B ·) S else S ,;
+S-> if ( B ·) { S } else S ,;
+S-> if ( B ·) S else { S } ,;
+S-> if ( B ·) { S } else { S } ,;
+B-> B ·>= B ,)
+B-> B ·> B ,)
+B-> B ·< B ,)
+B-> B ·<= B ,)
+B-> B ·>= B ,>=
+B-> B ·> B ,>=
+B-> B ·< B ,>=
+B-> B ·<= B ,>=
+B-> B ·>= B ,>
+B-> B ·> B ,>
+B-> B ·< B ,>
+B-> B ·<= B ,>
+B-> B ·>= B ,<
+B-> B ·> B ,<
+B-> B ·< B ,<
+B-> B ·<= B ,<
+B-> B ·>= B ,<=
+B-> B ·> B ,<=
+B-> B ·< B ,<=
+B-> B ·<= B ,<=
+I166:
+S-> if ( B ) ·S ,$
+S-> if ( B ) ·{ S } ,$
+S-> if ( B ) ·S else S ,$
+S-> if ( B ) ·{ S } else S ,$
+S-> if ( B ) ·S else { S } ,$
+S-> if ( B ) ·{ S } else { S } ,$
+S-> if ( B ) ·S ,else
+S-> if ( B ) ·{ S } ,else
+S-> if ( B ) ·S else S ,else
+S-> if ( B ) ·{ S } else S ,else
+S-> if ( B ) ·S else { S } ,else
+S-> if ( B ) ·{ S } else { S } ,else
+S-> if ( B ) ·S ,;
+S-> if ( B ) ·{ S } ,;
+S-> if ( B ) ·S else S ,;
+S-> if ( B ) ·{ S } else S ,;
+S-> if ( B ) ·S else { S } ,;
+S-> if ( B ) ·{ S } else { S } ,;
+S-> ·while ( B ) { S } ,$
+S-> ·while ( B ) S ,$
+S-> ·if ( B ) S ,$
+S-> ·if ( B ) { S } ,$
+S-> ·if ( B ) S else S ,$
+S-> ·if ( B ) { S } else S ,$
+S-> ·if ( B ) S else { S } ,$
+S-> ·if ( B ) { S } else { S } ,$
+S-> ·<id> = E ,$
+S-> ·S ; ,$
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I167:
+S-> if ( B ) S· ,$
+S-> if ( B ) S ·else S ,$
+S-> if ( B ) S ·else { S } ,$
+S-> if ( B ) S· ,else
+S-> if ( B ) S ·else S ,else
+S-> if ( B ) S ·else { S } ,else
+S-> if ( B ) S· ,;
+S-> if ( B ) S ·else S ,;
+S-> if ( B ) S ·else { S } ,;
+S-> S ·; ,$
+S-> S ·; ,else
+S-> S ·; ,;
+I168:
+S-> if ( B ) S else ·S ,$
+S-> if ( B ) S else ·{ S } ,$
+S-> if ( B ) S else ·S ,else
+S-> if ( B ) S else ·{ S } ,else
+S-> if ( B ) S else ·S ,;
+S-> if ( B ) S else ·{ S } ,;
+S-> ·while ( B ) { S } ,$
+S-> ·while ( B ) S ,$
+S-> ·if ( B ) S ,$
+S-> ·if ( B ) { S } ,$
+S-> ·if ( B ) S else S ,$
+S-> ·if ( B ) { S } else S ,$
+S-> ·if ( B ) S else { S } ,$
+S-> ·if ( B ) { S } else { S } ,$
+S-> ·<id> = E ,$
+S-> ·S ; ,$
+S-> ·while ( B ) { S } ,else
+S-> ·while ( B ) S ,else
+S-> ·if ( B ) S ,else
+S-> ·if ( B ) { S } ,else
+S-> ·if ( B ) S else S ,else
+S-> ·if ( B ) { S } else S ,else
+S-> ·if ( B ) S else { S } ,else
+S-> ·if ( B ) { S } else { S } ,else
+S-> ·<id> = E ,else
+S-> ·S ; ,else
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I169:
+S-> if ( B ) S else S· ,$
+S-> if ( B ) S else S· ,else
+S-> if ( B ) S else S· ,;
+S-> S ·; ,$
+S-> S ·; ,else
+S-> S ·; ,;
+I170:
+S-> if ( B ) S else { ·S } ,$
+S-> if ( B ) S else { ·S } ,else
+S-> if ( B ) S else { ·S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-> ·while ( B ) { S } ,;
+S-> ·while ( B ) S ,;
+S-> ·if ( B ) S ,;
+S-> ·if ( B ) { S } ,;
+S-> ·if ( B ) S else S ,;
+S-> ·if ( B ) { S } else S ,;
+S-> ·if ( B ) S else { S } ,;
+S-> ·if ( B ) { S } else { S } ,;
+S-> ·<id> = E ,;
+S-> ·S ; ,;
+I171:
+S-> if ( B ) S else { S ·} ,$
+S-> if ( B ) S else { S ·} ,else
+S-> if ( B ) S else { S ·} ,;
+S-> S ·; ,}
+S-> S ·; ,;
+I172:
+S-> if ( B ) S else { S }· ,$
+S-> if ( B ) S else { S }· ,else
+S-> if ( B ) S else { S }· ,;
+I173:
+S-> <id> ·= E ,$
+S-> <id> ·= E ,else
+S-> <id> ·= E ,;
+I174:
+S-> <id> = ·E ,$
+S-> <id> = ·E ,else
+S-> <id> = ·E ,;
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I175:
+S-> <id> = E· ,$
+S-> <id> = E· ,else
+S-> <id> = E· ,;
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I176:
+E-> E + ·E ,$
+E-> E + ·E ,else
+E-> E + ·E ,;
+E-> E + ·E ,+
+E-> E + ·E ,-
+E-> E + ·E ,/
+E-> E + ·E ,*
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I177:
+E-> E + E· ,$
+E-> E + E· ,else
+E-> E + E· ,;
+E-> E + E· ,+
+E-> E + E· ,-
+E-> E + E· ,/
+E-> E + E· ,*
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I178:
+E-> E - ·E ,$
+E-> E - ·E ,else
+E-> E - ·E ,;
+E-> E - ·E ,+
+E-> E - ·E ,-
+E-> E - ·E ,/
+E-> E - ·E ,*
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I179:
+E-> E - E· ,$
+E-> E - E· ,else
+E-> E - E· ,;
+E-> E - E· ,+
+E-> E - E· ,-
+E-> E - E· ,/
+E-> E - E· ,*
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I180:
+E-> E / ·E ,$
+E-> E / ·E ,else
+E-> E / ·E ,;
+E-> E / ·E ,+
+E-> E / ·E ,-
+E-> E / ·E ,/
+E-> E / ·E ,*
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I181:
+E-> E / E· ,$
+E-> E / E· ,else
+E-> E / E· ,;
+E-> E / E· ,+
+E-> E / E· ,-
+E-> E / E· ,/
+E-> E / E· ,*
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I182:
+E-> E * ·E ,$
+E-> E * ·E ,else
+E-> E * ·E ,;
+E-> E * ·E ,+
+E-> E * ·E ,-
+E-> E * ·E ,/
+E-> E * ·E ,*
+E-> ·E + E ,$
+E-> ·E - E ,$
+E-> ·E / E ,$
+E-> ·E * E ,$
+E-> ·( E ) ,$
+E-> ·<num> ,$
+E-> ·<id> ,$
+E-> ·E + E ,else
+E-> ·E - E ,else
+E-> ·E / E ,else
+E-> ·E * E ,else
+E-> ·( E ) ,else
+E-> ·<num> ,else
+E-> ·<id> ,else
+E-> ·E + E ,;
+E-> ·E - E ,;
+E-> ·E / E ,;
+E-> ·E * E ,;
+E-> ·( E ) ,;
+E-> ·<num> ,;
+E-> ·<id> ,;
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I183:
+E-> E * E· ,$
+E-> E * E· ,else
+E-> E * E· ,;
+E-> E * E· ,+
+E-> E * E· ,-
+E-> E * E· ,/
+E-> E * E· ,*
+E-> E ·+ E ,$
+E-> E ·- E ,$
+E-> E ·/ E ,$
+E-> E ·* E ,$
+E-> E ·+ E ,else
+E-> E ·- E ,else
+E-> E ·/ E ,else
+E-> E ·* E ,else
+E-> E ·+ E ,;
+E-> E ·- E ,;
+E-> E ·/ E ,;
+E-> E ·* E ,;
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I184:
+E-> ( ·E ) ,$
+E-> ( ·E ) ,else
+E-> ( ·E ) ,;
+E-> ( ·E ) ,+
+E-> ( ·E ) ,-
+E-> ( ·E ) ,/
+E-> ( ·E ) ,*
+E-> ·E + E ,)
+E-> ·E - E ,)
+E-> ·E / E ,)
+E-> ·E * E ,)
+E-> ·( E ) ,)
+E-> ·<num> ,)
+E-> ·<id> ,)
+E-> ·E + E ,+
+E-> ·E - E ,+
+E-> ·E / E ,+
+E-> ·E * E ,+
+E-> ·( E ) ,+
+E-> ·<num> ,+
+E-> ·<id> ,+
+E-> ·E + E ,-
+E-> ·E - E ,-
+E-> ·E / E ,-
+E-> ·E * E ,-
+E-> ·( E ) ,-
+E-> ·<num> ,-
+E-> ·<id> ,-
+E-> ·E + E ,/
+E-> ·E - E ,/
+E-> ·E / E ,/
+E-> ·E * E ,/
+E-> ·( E ) ,/
+E-> ·<num> ,/
+E-> ·<id> ,/
+E-> ·E + E ,*
+E-> ·E - E ,*
+E-> ·E / E ,*
+E-> ·E * E ,*
+E-> ·( E ) ,*
+E-> ·<num> ,*
+E-> ·<id> ,*
+I185:
+E-> ( E ·) ,$
+E-> ( E ·) ,else
+E-> ( E ·) ,;
+E-> ( E ·) ,+
+E-> ( E ·) ,-
+E-> ( E ·) ,/
+E-> ( E ·) ,*
+E-> E ·+ E ,)
+E-> E ·- E ,)
+E-> E ·/ E ,)
+E-> E ·* E ,)
+E-> E ·+ E ,+
+E-> E ·- E ,+
+E-> E ·/ E ,+
+E-> E ·* E ,+
+E-> E ·+ E ,-
+E-> E ·- E ,-
+E-> E ·/ E ,-
+E-> E ·* E ,-
+E-> E ·+ E ,/
+E-> E ·- E ,/
+E-> E ·/ E ,/
+E-> E ·* E ,/
+E-> E ·+ E ,*
+E-> E ·- E ,*
+E-> E ·/ E ,*
+E-> E ·* E ,*
+I186:
+E-> ( E )· ,$
+E-> ( E )· ,else
+E-> ( E )· ,;
+E-> ( E )· ,+
+E-> ( E )· ,-
+E-> ( E )· ,/
+E-> ( E )· ,*
+I187:
+E-> <num>· ,$
+E-> <num>· ,else
+E-> <num>· ,;
+E-> <num>· ,+
+E-> <num>· ,-
+E-> <num>· ,/
+E-> <num>· ,*
+I188:
+E-> <id>· ,$
+E-> <id>· ,else
+E-> <id>· ,;
+E-> <id>· ,+
+E-> <id>· ,-
+E-> <id>· ,/
+E-> <id>· ,*
+I189:
+S-> if ( B ) { ·S } ,$
+S-> if ( B ) { ·S } else S ,$
+S-> if ( B ) { ·S } else { S } ,$
+S-> if ( B ) { ·S } ,else
+S-> if ( B ) { ·S } else S ,else
+S-> if ( B ) { ·S } else { S } ,else
+S-> if ( B ) { ·S } ,;
+S-> if ( B ) { ·S } else S ,;
+S-> if ( B ) { ·S } else { S } ,;
+S-> ·while ( B ) { S } ,}
+S-> ·while ( B ) S ,}
+S-> ·if ( B ) S ,}
+S-> ·if ( B ) { S } ,}
+S-> ·if ( B ) S else S ,}
+S-> ·if ( B ) { S } else S ,}
+S-> ·if ( B ) S else { S } ,}
+S-> ·if ( B ) { S } else { S } ,}
+S-> ·<id> = E ,}
+S-> ·S ; ,}
+S-
