@@ -3,16 +3,16 @@ package parser;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class DFAState {
+public class LR1ProjectSet {
 	
 	public int id ;
-	public ArrayList<LRDerivation> set = new ArrayList<LRDerivation>();
+	public ArrayList<LR1Project> set = new ArrayList<LR1Project>();
 	
-	public DFAState(int id){
+	public LR1ProjectSet(int id){
 		this.id = id;
 	}
 	
-	public boolean addNewDerivation(LRDerivation d){
+	public boolean addNewDerivation(LR1Project d){
 		if(contains(d)){
 			return false;
 		} else {
@@ -23,15 +23,15 @@ public class DFAState {
 	
 	public String print(){
 		String str = "";
-		Iterator<LRDerivation> iter = set.iterator();
+		Iterator<LR1Project> iter = set.iterator();
 		while(iter.hasNext()){
 			str += iter.next().print();
 		}
 		return str;
 	}
 	
-	public boolean contains(LRDerivation lrd){
-		for(LRDerivation l:set){
+	public boolean contains(LR1Project lrd){
+		for(LR1Project l:set){
 			if(l.equalTo(lrd)){
 				return true;
 			}
@@ -39,7 +39,7 @@ public class DFAState {
 		return false;
 	}
 	
-	public boolean equalTo(DFAState state){
+	public boolean equalTo(LR1ProjectSet state){
 		if(this.toString().hashCode()==state.toString().hashCode()){
 			return true;
 		} else {
@@ -62,11 +62,11 @@ public class DFAState {
     public ArrayList<String> getGotoPath(){
 		
 		ArrayList<String> result = new ArrayList<String>();
-		for(LRDerivation lrd:set){
-			if(lrd.d.list.size()==lrd.index){
+		for(LR1Project lrd:set){
+			if(lrd.production.list.size()==lrd.position){
 				continue;
 			}
-			String s = lrd.d.list.get(lrd.index);
+			String s = lrd.production.list.get(lrd.position);
 			if(!result.contains(s)){
 				result.add(s);
 			}
@@ -74,13 +74,13 @@ public class DFAState {
 		return result;
 	}
 	
-	public ArrayList<LRDerivation> getLRDs(String s){
-		ArrayList<LRDerivation> result = new ArrayList<LRDerivation>();
-		for(LRDerivation lrd:set){
-			if(lrd.d.list.size() != lrd.index){
-				String s1 = lrd.d.list.get(lrd.index);
+	public ArrayList<LR1Project> getLRDs(String s){
+		ArrayList<LR1Project> result = new ArrayList<LR1Project>();
+		for(LR1Project lrd:set){
+			if(lrd.production.list.size() != lrd.position){
+				String s1 = lrd.production.list.get(lrd.position);
 				if(s1.equals(s)){
-					result.add((LRDerivation)lrd.clone());
+					result.add((LR1Project)lrd.clone());
 				}
 			}
 		}

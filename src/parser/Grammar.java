@@ -9,8 +9,6 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-import org.junit.jupiter.api.Test;
-
 public class Grammar {
 
 	public static String emp = "ε";
@@ -18,7 +16,7 @@ public class Grammar {
 	
 	public static TreeSet<String> VN = new TreeSet<String>();// 非终结符集
 	public static TreeSet<String> VT = new TreeSet<String>();// 终结符集
-	public static ArrayList<Derivation> listDerivation = new ArrayList<Derivation>();// 产生式集
+	public static ArrayList<Production> listDerivation = new ArrayList<Production>();// 产生式集
 	public static HashMap<String, TreeSet<String>> MapOfFirst = new HashMap<String, TreeSet<String>>();// first
 
 	static {
@@ -39,7 +37,7 @@ public class Grammar {
 			String[] div = line.split("->");
 			String[] right = div[1].split("\\|");// 将合并书写的多个表达式解析成多个;
 			for (String item : right) {
-				Derivation derivation = new Derivation(div[0] + "->" + item);
+				Production derivation = new Production(div[0] + "->" + item);
 				listDerivation.add(derivation);
 				VN.add(div[0]);
 				if(VT.contains(div[0])) {
@@ -81,7 +79,7 @@ public class Grammar {
 			MapOfFirst.put(vn, new TreeSet<String>());
 			int dSize = listDerivation.size();
 			for (int i = 0; i < dSize; i++) {
-				Derivation d = listDerivation.get(i);
+				Production d = listDerivation.get(i);
 				if (d.left.equals(vn)) {// 其实可以到后面抽象成一个方法获取，这里懒得改了
 					if (VT.contains(d.list.get(0))) {// 如果是产生式右端第一个文法符号是一个终结符，则直接添加
 						MapOfFirst.get(vn).add(d.list.get(0));
@@ -98,7 +96,7 @@ public class Grammar {
 	//查找非终结符vn的first集合
 	private static TreeSet<String> findFirstSet(String vn) {
 		TreeSet<String> set = new TreeSet<String>();
-		for (Derivation d : listDerivation) {
+		for (Production d : listDerivation) {
 			if (d.left.equals(vn)) {
 				if (VT.contains(d.list.get(0))) {// 如果是个终结符，则直接加入
 					set.add(d.list.get(0));

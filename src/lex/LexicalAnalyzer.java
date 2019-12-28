@@ -90,7 +90,7 @@ public class LexicalAnalyzer {
 
 	/**
 	 * 对某一位置进行词法分析
-	 * @param index 字母开始的位置
+	 * @param pos 字母开始的位置
 	 * @return 单个Token
 	 */
 	

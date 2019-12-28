@@ -125,7 +125,7 @@ public class SyntaxParser {
 		System.out.println();
 		// 打印所有状态
 		System.out.println("====================活前缀DFA Start=======================");
-		String states = this.table.dfa.printAllStates();
+		String states = this.table.dfa.getAllStatesToString();
 		// 将所有状态写入活前缀DFA活前缀DFA.txt
 		try {
 			fileWriter1.write(states);
@@ -179,7 +179,7 @@ public class SyntaxParser {
 				writeFile(str);
 				System.out.println();
 			} else if (action.startsWith("r")) {
-				Derivation derivation = Grammar.listDerivation.get(Integer.parseInt(action.substring(1)));
+				Production derivation = Grammar.listDerivation.get(Integer.parseInt(action.substring(1)));
 				int r = derivation.list.size();
 				index--;
 				for (int i = 0; i < r; i++) {

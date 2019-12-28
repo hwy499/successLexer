@@ -3,12 +3,12 @@ package parser;
 import java.util.ArrayList;
 
 //产生式
-public class Derivation {
+public class Production {
 	
 	public String left;
 	public ArrayList<String> list = new ArrayList<String>();
 	
-	public Derivation(String s){
+	public Production(String s){
 		String[] div = s.split("->");
 		this.left = div[0];
 		String[] v = div[1].split(" ");
@@ -26,7 +26,7 @@ public class Derivation {
 		return result.trim();
 	}
 	
-	public boolean equalTo(Derivation d){
+	public boolean equalTo(Production d){
 		if(this.toString().equals(d.toString())){
 			return true;
 		} else {

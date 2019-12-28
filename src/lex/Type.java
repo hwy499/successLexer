@@ -1,8 +1,6 @@
 package lex;
 
 public class Type {
-	
-	
 	/*C语言的32个关键字*/
 	public static final int AUTO = 0;
 	public static final int DOUBLE = 1;
@@ -91,12 +89,9 @@ public class Type {
 	 * @return
 	 */
 	public static boolean isCalc(int type){
-		if(type == Type.ASSIGN || type == Type.ADD || type == Type.SUB || type == Type.DIV ||
+		return (type == Type.ASSIGN || type == Type.ADD || type == Type.SUB || type == Type.DIV ||
 				type == Type.MUL ||type == Type.LT || type == Type.GT || type == Type.OR_1 ||
-				type == Type.AND_1 || type == Type.NOT){
-			return true;
-		} else {
-			return false;
-		}
+				type == Type.AND_1 || type == Type.NOT);
+			
 	}
 }
