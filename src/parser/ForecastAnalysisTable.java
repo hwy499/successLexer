@@ -8,7 +8,7 @@ import java.util.Iterator;
 
 
 //构建分析表
-public class AnalyzeTable {
+public class ForecastAnalysisTable {
 	
 	public static String error = "X";  //错误标记
 	public static String acc = "acc";  //acc标记
@@ -24,7 +24,7 @@ public class AnalyzeTable {
 	private int[][] gotoTable;
 	private String[][] actionTable;
 	
-	public AnalyzeTable(){
+	public ForecastAnalysisTable(){
 		createTableHeader();//建表
 		this.actionLength = actionCol.length;
 		this.gotoLength = gotoCol.length;
@@ -230,7 +230,7 @@ public class AnalyzeTable {
 		}
 		for(int i = 0;i < actionTable.length;i++){
 			for(int j = 0;j < actionTable[0].length;j++){
-				actionTable[i][j] = AnalyzeTable.error;
+				actionTable[i][j] = ForecastAnalysisTable.error;
 			}
 		}
 		//完善语法分析表的goto部分
@@ -253,7 +253,7 @@ public class AnalyzeTable {
 						String value = "r"+derivationIndex;
 						actionTable[i][actionIndex(lrd.lr)] = value;//设为规约
 					} else {
-						actionTable[i][actionIndex("$")] = AnalyzeTable.acc;//设为接受
+						actionTable[i][actionIndex("$")] = ForecastAnalysisTable.acc;//设为接受
 					}
 				} else {
 					String next = lrd.d.list.get(lrd.index);//获取·后面的文法符号

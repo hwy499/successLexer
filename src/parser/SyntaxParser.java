@@ -20,7 +20,7 @@ public class SyntaxParser {
 	private int length; // tokenlist的长度
 	private int index; // 现在所指的token位置
 	private int index1; // 现在所指语句的位置
-	private AnalyzeTable table; // 构造的语法分析表
+	private ForecastAnalysisTable table; // 构造的语法分析表
 	private Stack<Integer> stateStack; // 用于存储相应的状态
 	private Map<Integer, Integer> map;
 	private FileWriter fileWriter; // 保存分析过程
@@ -110,7 +110,7 @@ public class SyntaxParser {
 		this.index = 0;
 		this.index1 = 1;
 		// 初始化分析表
-		this.table = new AnalyzeTable();
+		this.table = new ForecastAnalysisTable();
 		// 初始化状态栈
 		this.stateStack = new Stack<Integer>();
 		// 压入0
@@ -197,7 +197,7 @@ public class SyntaxParser {
 				str += "输入:" + printInput() + "\n";
 				writeFile(str);
 				System.out.println();
-			} else if (action.equals(AnalyzeTable.acc)) {
+			} else if (action.equals(ForecastAnalysisTable.acc)) {
 				System.out.print("第条" + index1 + "+语句语法分析完成" + "\t");
 				System.out.print("状态表:" + stateStack.toString() + "\t");
 				System.out.print("输入:");

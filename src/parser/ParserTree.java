@@ -188,9 +188,9 @@ public class ParserTree {
 
 	private static String levelSign(int level) {
 		StringBuilder sb = new StringBuilder();
-		sb.append(" ├─");
+		sb.append(" |——");
 		for (int x = 0; x < level; x++) {
-			sb.insert(0, " │   ");
+			sb.insert(0, " |   ");
 		}
 		return sb.toString();
 	}
