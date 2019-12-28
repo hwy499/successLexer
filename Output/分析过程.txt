@@ -1,166 +1,21 @@
-移入	状态表:[0, 3]	输入:( a <= b ) { a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4]	输入:a <= b ) { a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 117]	输入:<= b ) { a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 3, 4, 5]	输入:<= b ) { a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 114]	输入:b ) { a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 114, 117]	输入:) { a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 3, 4, 5, 114, 115]	输入:) { a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 3, 4, 5]	输入:) { a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 6]	输入:{ a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 6, 7]	输入:a = b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 6, 7, 28]	输入:= b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 6, 7, 28, 29]	输入:b ; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 6, 7, 28, 29, 56]	输入:; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 3, 4, 5, 6, 7, 28, 29, 30]	输入:; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 3, 4, 5, 6, 7, 8]	输入:; } $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 6, 7, 8, 10]	输入:} $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 3, 4, 5, 6, 7, 8]	输入:} $ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 3, 4, 5, 6, 7, 8, 9]	输入:$ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 1]	输入:$ if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-第条1+语句语法分析完成	状态表:[0, 1]	输入:if ( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120]	输入:( a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121]	输入:a <= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 117]	输入:<= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:<= b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 114]	输入:b ) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 114, 117]	输入:) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 114, 115]	输入:) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:) min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123]	输入:min = a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173]	输入:= a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173, 174]	输入:a ; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173, 174, 188]	输入:; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 173, 174, 175]	输入:; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124]	输入:; else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 146]	输入:else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124]	输入:else min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125]	输入:min = b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 130]	输入:= b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 130, 131]	输入:b ; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 130, 131, 145]	输入:; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124, 125, 130, 131, 132]	输入:; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124, 125, 126]	输入:; $ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 126, 2]	输入:$ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124, 125, 126]	输入:$ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 1]	输入:$ result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-第条2+语句语法分析完成	状态表:[0, 1]	输入:result = min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130]	输入:= min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131]	输入:min * PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 145]	输入:* PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 130, 131, 132]	输入:* PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 132, 139]	输入:PI * ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 132, 139, 145]	输入:* ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 130, 131, 132, 139, 140]	输入:* ( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 132, 139, 140, 139]	输入:( 4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 132, 139, 140, 139, 141]	输入:4 / 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 132, 139, 140, 139, 141, 53]	输入:/ 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 130, 131, 132, 139, 140, 139, 141, 142]	输入:/ 3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 132, 139, 140, 139, 141, 142, 46]	输入:3 ) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 132, 139, 140, 139, 141, 142, 46, 53]	输入:) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 130, 131, 132, 139, 140, 139, 141, 142, 46, 47]	输入:) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 130, 131, 132, 139, 140, 139, 141, 142]	输入:) ; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 130, 131, 132, 139, 140, 139, 141, 142, 143]	输入:; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 130, 131, 132, 139, 140, 139, 140]	输入:; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 130, 131, 132, 139, 140]	输入:; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 130, 131, 132]	输入:; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 1]	输入:; $ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 1, 2]	输入:$ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 1]	输入:$ if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-第条3+语句语法分析完成	状态表:[0, 1]	输入:if ( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120]	输入:( a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121]	输入:a < b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 117]	输入:< b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:< b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 112]	输入:b ) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 112, 117]	输入:) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 112, 113]	输入:) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:) { a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123]	输入:{ a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147]	输入:a = b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 28]	输入:= b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 28, 29]	输入:b ; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 28, 29, 56]	输入:; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 28, 29, 30]	输入:; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 148]	输入:; } $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 10]	输入:} $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 148]	输入:} $ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149]	输入:$ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 1]	输入:$ if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-第条4+语句语法分析完成	状态表:[0, 1]	输入:if ( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120]	输入:( a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121]	输入:a <= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 117]	输入:<= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:<= b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 114]	输入:b ) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 114, 117]	输入:) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 114, 115]	输入:) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:) a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123]	输入:a = b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173]	输入:= b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173, 174]	输入:b ; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173, 174, 188]	输入:; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 173, 174, 175]	输入:; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124]	输入:; $ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 146]	输入:$ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124]	输入:$ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 1]	输入:$ if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-第条5+语句语法分析完成	状态表:[0, 1]	输入:if ( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120]	输入:( a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121]	输入:a <= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 117]	输入:<= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:<= b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 114]	输入:b ) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 114, 117]	输入:) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 114, 115]	输入:) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:) a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123]	输入:a = b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173]	输入:= b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173, 174]	输入:b ; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 173, 174, 188]	输入:; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 173, 174, 175]	输入:; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124]	输入:; else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 146]	输入:else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124]	输入:else { a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125]	输入:{ a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 127]	输入:a = c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 127, 28]	输入:= c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 127, 28, 29]	输入:c ; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 127, 28, 29, 56]	输入:; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124, 125, 127, 28, 29, 30]	输入:; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124, 125, 127, 128]	输入:; } $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 127, 128, 10]	输入:} $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 124, 125, 127, 128]	输入:} $ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 124, 125, 127, 128, 129]	输入:$ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 1]	输入:$ if ( a >= b ) { a = b ; } else { a = c ; } $ 
-第条6+语句语法分析完成	状态表:[0, 1]	输入:if ( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120]	输入:( a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121]	输入:a >= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 117]	输入:>= b ) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:>= b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 108]	输入:b ) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 108, 117]	输入:) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 108, 109]	输入:) { a = b ; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122]	输入:) { a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123]	输入:{ a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147]	输入:a = b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 28]	输入:= b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 28, 29]	输入:b ; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 28, 29, 56]	输入:; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 28, 29, 30]	输入:; } else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 148]	输入:; } else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 10]	输入:} else { a = c ; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 148]	输入:} else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149]	输入:else { a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150]	输入:{ a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152]	输入:a = c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152, 28]	输入:= c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152, 28, 29]	输入:c ; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152, 28, 29, 56]	输入:; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152, 28, 29, 30]	输入:; } $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152, 153]	输入:; } $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152, 153, 10]	输入:} $ 
-规约	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152, 153]	输入:} $ 
-移入	状态表:[0, 120, 121, 122, 123, 147, 148, 149, 150, 152, 153, 154]	输入:$ 
+移入	状态表:[0, 3]	输入:( a <= b ) { a = b ; } $ 
+移入	状态表:[0, 3, 4]	输入:a <= b ) { a = b ; } $ 
+移入	状态表:[0, 3, 4, 117]	输入:<= b ) { a = b ; } $ 
+规约	状态表:[0, 3, 4, 5]	输入:<= b ) { a = b ; } $ 
+移入	状态表:[0, 3, 4, 5, 114]	输入:b ) { a = b ; } $ 
+移入	状态表:[0, 3, 4, 5, 114, 117]	输入:) { a = b ; } $ 
+规约	状态表:[0, 3, 4, 5, 114, 115]	输入:) { a = b ; } $ 
+规约	状态表:[0, 3, 4, 5]	输入:) { a = b ; } $ 
+移入	状态表:[0, 3, 4, 5, 6]	输入:{ a = b ; } $ 
+移入	状态表:[0, 3, 4, 5, 6, 7]	输入:a = b ; } $ 
+移入	状态表:[0, 3, 4, 5, 6, 7, 28]	输入:= b ; } $ 
+移入	状态表:[0, 3, 4, 5, 6, 7, 28, 29]	输入:b ; } $ 
+移入	状态表:[0, 3, 4, 5, 6, 7, 28, 29, 56]	输入:; } $ 
+规约	状态表:[0, 3, 4, 5, 6, 7, 28, 29, 30]	输入:; } $ 
+规约	状态表:[0, 3, 4, 5, 6, 7, 8]	输入:; } $ 
+移入	状态表:[0, 3, 4, 5, 6, 7, 8, 10]	输入:} $ 
+规约	状态表:[0, 3, 4, 5, 6, 7, 8]	输入:} $ 
+移入	状态表:[0, 3, 4, 5, 6, 7, 8, 9]	输入:$ 
 规约	状态表:[0, 1]	输入:$ 
-第条7+语句语法分析完成	状态表:[0, 1]	输入:
+第条1+语句语法分析完成	状态表:[0, 1]	输入:
 程序语法正确

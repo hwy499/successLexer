@@ -1,8 +1,2 @@
 while(a <= b){a = b;}
-if(a <= b) min = a;
-else min = b;
-result = min * PI * (4/3);
-if(a < b){a = b;}
-if(a <= b) a = b;
-if(a <= b) a= b;else{ a =c;}
-if(a >= b) { a = b; } else{a = c;}
+
