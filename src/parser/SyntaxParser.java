@@ -179,7 +179,7 @@ public class SyntaxParser {
 				writeFile(str);
 				System.out.println();
 			} else if (action.startsWith("r")) {
-				Derivation derivation = CFG.F.get(Integer.parseInt(action.substring(1)));
+				Derivation derivation = Grammar.listDerivation.get(Integer.parseInt(action.substring(1)));
 				int r = derivation.list.size();
 				index--;
 				for (int i = 0; i < r; i++) {

@@ -40,20 +40,20 @@ public class ForecastAnalysisTable {
 	 */
 	private void createTableHeader(){
 		//初始化action的列宽    加1为的是终结符$
-		this.actionCol = new String[CFG.VT.size()+1];
+		this.actionCol = new String[Grammar.VT.size()+1];
 		//初始化goto的列宽
-		this.gotoCol = new String[CFG.VN.size()+CFG.VT.size()];
+		this.gotoCol = new String[Grammar.VN.size()+Grammar.VT.size()];
 		
 		//迭代器
-		Iterator<String> iter1 = CFG.VT.iterator();
-		Iterator<String> iter2 = CFG.VN.iterator();
+		Iterator<String> iter1 = Grammar.VT.iterator();
+		Iterator<String> iter2 = Grammar.VN.iterator();
 		
 		int i = 0;
 		
 		//初始化action和goto表头
 		while(iter1.hasNext()){
 			String vt = iter1.next();
-			if(!vt.equals(CFG.emp)){
+			if(!vt.equals(Grammar.emp)){
 				actionCol[i] = vt;
 				gotoCol[i] = vt;
 				i++;
@@ -100,7 +100,7 @@ public class ForecastAnalysisTable {
 					b = lrd.d.list.get(lrd.index+1);
 				}
 				//判断A是否为非终结符，是则展开，否则结束
-				if(CFG.VN.contains(A)){
+				if(Grammar.VN.contains(A)){
 					ArrayList<String> firstB = first(b);
 					ArrayList<Derivation> dA = getDerivation(A);
 					for(int j=0,length1=dA.size();j<length1;j++){
@@ -190,7 +190,7 @@ public class ForecastAnalysisTable {
 	 */
 	public ArrayList<Derivation> getDerivation(String v){
 		ArrayList<Derivation> result = new ArrayList<Derivation>();
-		Iterator<Derivation> iter = CFG.F.iterator();
+		Iterator<Derivation> iter = Grammar.listDerivation.iterator();
 		while(iter.hasNext()){
 			Derivation d = iter.next();
 			if(d.left.equals(v)){
@@ -210,7 +210,7 @@ public class ForecastAnalysisTable {
 		if(v.equals("$")){
 			result.add("$");
 		} else {
-			Iterator<String> iter = CFG.firstMap.get(v).iterator();
+			Iterator<String> iter = Grammar.MapOfFirst.get(v).iterator();
 			while(iter.hasNext()){
 				result.add(iter.next());
 			}
@@ -257,7 +257,7 @@ public class ForecastAnalysisTable {
 					}
 				} else {
 					String next = lrd.d.list.get(lrd.index);//获取·后面的文法符号
-					if(CFG.VT.contains(next)){//必须是一个终结符号
+					if(Grammar.VT.contains(next)){//必须是一个终结符号
 						if(gotoTable[i][gotoIndex(next)] != -1){
 							actionTable[i][actionIndex(next)] = "s"+gotoTable[i][gotoIndex(next)];
 						}
@@ -286,9 +286,9 @@ public class ForecastAnalysisTable {
 	}
 	
 	private int derivationIndex(Derivation d){//返回是第几个表达式
-		int size = CFG.F.size();
+		int size = Grammar.listDerivation.size();
 		for(int i = 0;i < size;i++){
-			if(CFG.F.get(i).equals(d)){
+			if(Grammar.listDerivation.get(i).equals(d)){
 				return i;
 			}
 		}

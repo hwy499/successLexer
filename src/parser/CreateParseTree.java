@@ -20,7 +20,7 @@ public class CreateParseTree {
 			for (String name : item.list) {
 				System.out.println("name:"+name);
 				pTree.addNode(new ParserTree(name));
-				if(CFG.VN.contains(name)) {
+				if(Grammar.VN.contains(name)) {
 					stack.add(pTree.getChild(count));
 				}
 				count ++;

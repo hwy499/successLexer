@@ -131,7 +131,7 @@ public class ParserTree {
 
 	public void leftToRight(ParserTree root) {
 		if (!root.isEmpty()) {
-			if (root.isLeaf() && CFG.VT.contains(root.getRootData())) {
+			if (root.isLeaf() && Grammar.VT.contains(root.getRootData())) {
 				visit(root);
 			}
 			for (ParserTree child : root.getChilds()) {

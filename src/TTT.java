@@ -5,7 +5,7 @@ import java.util.Stack;
 
 import org.junit.jupiter.api.Test;
 
-import parser.CFG;
+import parser.Grammar;
 import parser.ParseResult;
 import parser.ParserTree;
 import parser.SyntaxParser;
@@ -32,7 +32,7 @@ public class TTT {
 			System.out.println(item.list);
 			for (String name : item.list) {
 				pTree.addNode(new ParserTree(name));
-				if(CFG.VN.contains(name)) {
+				if(Grammar.VN.contains(name)) {
 					stack.add(pTree.getChild(count));
 				}
 				count ++;
@@ -56,8 +56,6 @@ public class TTT {
 		System.out.println("\n\n从上到下遍历叶子节点");
 		root.leftToRight(root);
 	
-		
-		
 		/*
 		 * while(!results.empty()) { ParseResult item = results.pop(); if(item != null)
 		 * { System.out.println(item.value + "==>>" + item.list); } }
@@ -67,6 +65,6 @@ public class TTT {
 	@Test
 	public  void test() {
 		ParserTree p = new ParserTree("B");
-		System.out.println(CFG.VN.contains(p.getRootData()));
+		System.out.println(Grammar.VN.contains(p.getRootData()));
 	}
 }
