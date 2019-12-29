@@ -33,7 +33,7 @@ public class Parsing {
 		map = new HashMap<Integer, Integer>();
 		this.lex = new lexicalAnalysis(filename);
 		this.tokenList = lex.getTokenList();
-		saveToFile(this.tokenList, "词法分析结果.txt");
+		saveToFile(this.tokenList, "词法分析.txt");
 		add$();
 		this.length = this.tokenList.size();
 		this.index = 0;
@@ -58,7 +58,6 @@ public class Parsing {
 	public boolean analyze() {
 		while (true) {
 			Token token = readToken();
-			System.out.println(token);
 			int valueType = token.type;
 			String value = getValue(valueType);
 			if (value == null) {
@@ -86,6 +85,8 @@ public class Parsing {
 						.append("规约" + "\t" + "状态表:" + stateStack.toString() + "\t" + "输入:" + printToken() + "\n");
 			} else if (action.equals(ForecastAnalysisTable.acc)) {
 				productionStack.add(null);
+				System.out.println("第条" + index1 + "语句语法分析完成" + "\t");
+				analysisProcess.append("第条" + index1 + "语句语法分析完成" + "\t");
 				analysisProcess.append("第条" + index1 + "+语句语法分析完成" + "\t" + "状态表:" + stateStack.toString() + "\t"
 						+ "输入:" + printToken() + "\n");
 				if (readToken() != null) {
@@ -94,15 +95,14 @@ public class Parsing {
 					index--;
 					analyze();
 				}
-				System.out.println("程序语法正确");
-				analysisProcess.append("程序语法正确");
+
 				return true;
 			} else {
 				error();
 				System.out.println("程序语法错误:\n"+errorMessage.toString());
 				analysisProcess.append(errorMessage.toString());
 				analysisProcess.append("程序语法错误");
-				saveToFile(analysisProcess.toString(), "分析过程");
+				saveToFile(analysisProcess.toString(), "分析过程.txt");
 				return false;
 			}
 		}
@@ -157,7 +157,7 @@ public class Parsing {
 
 	public void error() {
 		errorMessage.append("在源文件中第" + index1 + "个语句中" + "第" + map.get(index - 1) + "个词法分析元素处发现了错误:"
-				+ tokenList.get(index - 1).toString());
+				+ tokenList.get(index - 1).toString()+"\n");
 	}
 
 	private StringBuilder printToken() {

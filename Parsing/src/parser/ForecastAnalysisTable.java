@@ -300,7 +300,6 @@ public class ForecastAnalysisTable {
 			colLine += gotoCol[j];
 		}
 		sb.append(colLine+"\n");
-		System.out.println(colLine);
 		int index = 0;
 		for(int i = 0;i < lr1ProjectCluster.lr1ProjectCluster.size();i++){
 			String line = String.valueOf(i);
@@ -322,7 +321,6 @@ public class ForecastAnalysisTable {
 			index = 0;
 			line += "\t";
 			sb.append(line+"\n");
-			System.out.println(line);
 		}
 		return sb.toString();
 	}

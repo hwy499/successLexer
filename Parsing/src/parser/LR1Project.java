@@ -41,7 +41,6 @@ public class LR1Project implements Cloneable {
 	}
 
 	public String print() {
-		System.out.println(this.toString());
 		return this.toString()+"\n";
 	}
 
