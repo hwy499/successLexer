@@ -1,4 +1,0 @@
-S'->S
-S->while ( B ) { S }|while ( B ) S|if ( B ) S|if ( B ) { S }|if ( B ) S else S|if ( B ) { S } else S|if ( B ) S else { S }|if ( B ) { S } else { S }|<id> = E|<id> = E|S ;
-B->B >= B|B > B|B < B|B <= B|<num>|<id>
-E->E + E|E - E|E / E|E * E|( E )|<num>|<id>
