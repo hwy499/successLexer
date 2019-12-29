@@ -1,4 +1,6 @@
 S'->S
-S->while ( A ) { S }|while ( A ) S|if ( A ) S|if ( A ) { S }|if ( A ) S else S|if ( A ) { S } else S|if ( A ) S else { S }|if ( A ) { S } else { S }|<id> = B|S ;
+S->while ( A ) { S }|while ( A ) S|if ( A ) S|if ( A ) { S }
+S->if ( A ) S else S|if ( A ) { S } else S|if ( A ) S else { S }|if ( A ) { S } else { S }
+S-><id> = B|S ;
 A->A >= A|A > A|A < A|A <= A|<num>|<id>
 B->B + B|B - B|B / B|B * B|( B )|<num>|<id>

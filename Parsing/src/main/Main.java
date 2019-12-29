@@ -1,13 +1,13 @@
 package main;
 
+
 import parser.*;
+import swing.MainJFrame;
 public class Main {
 	public static void main(String[] args) {
 		Parsing parsing = new Parsing("source.txt");
-		boolean succeess = parsing.analyze();
-		if (succeess) {
-			ParserTree.PrintTree();
-			ParserTree.saveParserTree("语法树");
-		} 
+		parsing.analyze();
+		ParserTree.saveParserTree("语法树.txt");	
+		MainJFrame.main(args);
 	}
 }

@@ -1,2 +1,0 @@
-移入	状态表:[0, 130]	输入:' - SS - while ( B ) { S } $ | while ( B ) S | if ( B ) S | if ( B ) { S } $ | if ( B ) SelseS | if ( B ) { S } else S | if ( B ) Selse { S } $ | if ( B ) { S } else { S } $ | < id >= E | < id >= E | S ; $ B - B >= B | B > B | B < B | B <= B | < num > id > E - E + E | E - E | E / E | E * E | ( E ) | < num > id > 
-在源文件中第1个语句中第2个词法分析元素处发现了错误:(67,')在源文件中第1个语句中第3个词法分析元素处发现了错误:(34,-)程序语法错误

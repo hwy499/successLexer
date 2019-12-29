@@ -61,7 +61,6 @@ public class Grammar {
 
 	// 计算所有符号的first集合 
 	private static void calculateFirstSet() {
-		
 		// 计算所有终结符的first集合
 		Iterator<String> iter1 = VT.iterator();
 		while (iter1.hasNext()) {
@@ -69,7 +68,6 @@ public class Grammar {
 			MapOfFirst.put(vt, new TreeSet<String>());
 			MapOfFirst.get(vt).add(vt);
 		}
-		
 		// 计算所有非终结符的first集合
 		Iterator<String> iter2 = VN.iterator();
 		while (iter2.hasNext()) {

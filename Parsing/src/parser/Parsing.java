@@ -16,10 +16,10 @@ public class Parsing {
 	
 	public static Stack<Production> productionStack ; // 用于存储相应的状态
 	private lexicalAnalysis lex; // 词法分析器
-	private ArrayList<Token> tokenList; // 从词法分析器获得的所有token,相当于模型中的输入
+	private ArrayList<Token> tokenList; // 从词法分析器获得的所有token,相当于模型中的待输入序列
 	private int length; // tokenlist的长度
 	private int index; // 现在所指的token位置
-	public static int index1; // 现在所指语句的位置
+	public static int index1; // 现在所指语句，的位置
 	private ForecastAnalysisTable table; // 构造的语法分析表
 	private Stack<Integer> stateStack; // 用于存储相应的状态
 	private Map<Integer, Integer> map;
@@ -43,7 +43,7 @@ public class Parsing {
 		this.stateStack.push(0);
 		String states = this.table.lr1ProjectCluster.getAllStatesToString();
 		// 将所有状态集写入文件
-		saveToFile(states,"活前缀DFA.txt");
+		saveToFile(states,"LR1项目集簇.txt");
 		saveToFile(this.table.print(), "预测分析表.txt");
 	}
 
@@ -56,6 +56,8 @@ public class Parsing {
 	}
 
 	public boolean analyze() {
+		analysisProcess.append("开始分析第"+index1+"个语句"+"\n");
+		int col = 1;
 		while (true) {
 			Token token = readToken();
 			int valueType = token.type;
@@ -70,7 +72,7 @@ public class Parsing {
 				int newState = Integer.parseInt(action.substring(1));
 				stateStack.push(newState);
 				analysisProcess
-						.append("移入" + "\t" + "状态表:" + stateStack.toString() + "\t" + "输入:" + printToken() + "\n");
+						.append("第"+col++ +"步  "+"动作为："+"移进" + "\t" + "状态栈:" + stateStack.toString() + "\t" + "待输入序列:" + printToken() + "\n");
 			} else if (action.startsWith("r")) {
 				Production production = Grammar.listDerivation.get(Integer.parseInt(action.substring(1)));
 				int r = production.list.size();
@@ -82,20 +84,25 @@ public class Parsing {
 				stateStack.push(s);
 				productionStack.add(production);
 				analysisProcess
-						.append("规约" + "\t" + "状态表:" + stateStack.toString() + "\t" + "输入:" + printToken() + "\n");
+						.append("第"+col++ +"步  "+"动作为："+"规约" + "\t" + "状态栈:" + stateStack.toString() + "\t" + "待输入序列:" + printToken() + "\n");
 			} else if (action.equals(ForecastAnalysisTable.acc)) {
 				productionStack.add(null);
-				System.out.println("第条" + index1 + "语句语法分析完成" + "\t");
-				analysisProcess.append("第条" + index1 + "语句语法分析完成" + "\t");
-				analysisProcess.append("第条" + index1 + "+语句语法分析完成" + "\t" + "状态表:" + stateStack.toString() + "\t"
-						+ "输入:" + printToken() + "\n");
+				System.out.println("第条" + index1 + "语句，语法分析完成" + "\t");
+				analysisProcess.append("第条" + index1 + "语句，语法分析完成" + "\t");
+				analysisProcess.append("第条" + index1 + "+语句，语法分析完成" + "\t" + "状态栈:" + stateStack.toString() + "\t"
+						+ "待输入序列:" + printToken() + "\n");
+				ParserTree.PrintTree();
 				if (readToken() != null) {
 					index1++;
 					stateStack.pop();
 					index--;
-					analyze();
+					try {
+						analyze();
+					}catch (Exception e) {
+						System.out.println("语句"+index1+"发生符号不匹配错误");
+					}
 				}
-
+				saveToFile(analysisProcess.toString(), "分析过程.txt");
 				return true;
 			} else {
 				error();
@@ -156,7 +163,7 @@ public class Parsing {
 	}
 
 	public void error() {
-		errorMessage.append("在源文件中第" + index1 + "个语句中" + "第" + map.get(index - 1) + "个词法分析元素处发现了错误:"
+		errorMessage.append("在源文件中第" + index1 + "个语句，中" + "第" + map.get(index - 1) + "个词法分析元素处发现了错误:"
 				+ tokenList.get(index - 1).toString()+"\n");
 	}
 

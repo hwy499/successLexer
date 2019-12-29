@@ -79,7 +79,7 @@ public class Scanner {
 				}
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println("错误，发生异常");
 		} 
 		
 		char[] chStr = new char[trans.size()];
